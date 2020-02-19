@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  text-align: center;
+  color: rgb(102, 158, 177);
+}
+#selected {
+  background-color: lightblue;
+}
+
+#song {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.App {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.sharky {
+  width: 80px;
+  animation: swimUp 2s infinite linear,
+    swimForward 8s infinite linear,
+    flipShark 8s infinite;
+  position: relative;
+}
+
+@keyframes swimUp {
+  0%   { top:10px;}
+  50%  { top:-10px;}
+  100% { top:10px;}
+}
+
+@keyframes swimForward {
+  0%  {left:0px;}
+  50% {left: 70%;}
+  100% {left: 0px;}
+}
+
+@keyframes flipShark {
+  50% {transform: rotateY(180deg);}
+}
+
+
+
+
+
